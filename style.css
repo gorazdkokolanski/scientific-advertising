@@ -2,8 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 @font-face {
-    font-family: 'Mona Sans';
-    src: url('./fonts/FuturaLT-Bold.ttf') format('truetype');
+    font-family: 'FuturaLT ExtraBold';
+    src: url('./fonts/FuturaLT-CondensedExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaLT Bold';
+    src: url('./fonts/FuturaLT-CondensedBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -158,7 +165,7 @@ header {
 }
 
 .hero-container h5 {
-    font-family: 'Mona Sans';
+    font-family: 'FuturaLT Bold';
     font-size: 24px;
     line-height: 95%;
     letter-spacing: -2%;
@@ -198,10 +205,10 @@ header {
 }
 
 h1 {
-    font-family: 'Mona Sans';
+    font-family: 'FuturaLT ExtraBold';
     font-size: 128px;
     line-height: 95%;
-    letter-spacing: -6%;
+    letter-spacing: -0.3vw;
     text-align: center;
 }
 
@@ -277,7 +284,7 @@ h1 {
 }
 
 .date {
-    font-family: 'Mona Sans';
+    font-family: 'FuturaLT Bold';
     font-size: 24px;
     font-weight: 700;
     letter-spacing: -2%;
@@ -295,9 +302,9 @@ h1 {
 }
 
 h2 {
-    font-family: 'Mona Sans';
+    font-family: 'FuturaLT Bold';
     line-height: 95%;
-    letter-spacing: -4%;
+    letter-spacing: -0.2vw;
     font-size: 70px;
     text-align: center;
 }
@@ -323,12 +330,12 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    height: 1700px;
+    height: 1300px;
     justify-content: center;
 }
 
 h5 {
-    font-family: 'Mona Sans';
+    font-family: 'FuturaLT Bold';
     font-size: 24px;
     line-height: 85%;
     letter-spacing: -2%;
@@ -404,9 +411,9 @@ h5 {
 
 #fluff {
     height: 244px;
-    font-size: 4vw;
+    font-size: 4.4vw;
     font-weight: 700;
-    letter-spacing: -2%;
+    letter-spacing: -0.2vw;
     background:
         radial-gradient(circle at center top, rgba(255, 255, 255, 0.4), transparent 60%),
         linear-gradient(to right, rgba(255, 245, 0, 1), rgba(255, 122, 0, 1));
@@ -420,6 +427,7 @@ h5 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    font-family: "FuturaLT Bold";
 }
 
 #fluff>div>span {
@@ -563,7 +571,7 @@ h5 {
     display: flex;
     flex-direction: column;
     gap: 70px;
-    height: 3400px;
+    height: 3100px;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -628,7 +636,7 @@ h5 {
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
-    font-family: 'Mona Sans';
+    font-family: 'FuturaLT Bold';
     font-size: 2.3vw;
     width: 100%;
     text-align: center;
@@ -676,7 +684,7 @@ h5 {
 }
 
 .proof-container {
-    height: 880px;
+    height: 680px;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -701,7 +709,7 @@ h5 {
 }
 
 .contact-container {
-    height: 1200px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -835,7 +843,6 @@ h5 {
 
     background-repeat: no-repeat;
     background-size: cover;
-    border: none;
 }
 
 .submit-btn {
@@ -964,19 +971,7 @@ input:focus, textarea:focus {
     height: calc(100% + 2px);
 }
 
-.gradient-bg::after {
-    content: "";
-    position: absolute;
-    inset: -1px;
-    z-index: -1;
-    border-radius: 12px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
+
 
 
 footer {
@@ -1062,7 +1057,7 @@ footer {
     margin-top: 20px;
     position: relative;
     font-size: 24px;
-    font-family: 'Mona Sans';
+    font-family: 'FuturaLT Bold';
     line-height: 95%;
     letter-spacing: -2%;
 }
@@ -1581,7 +1576,7 @@ footer {
         font-weight: 700;
         margin-bottom: 50px;
         width: 90%;
-        font-family: 'Mona Sans';
+        font-family: 'FuturaLT Bold';
     }
 
     .mobile-menu .glowing-btn {
