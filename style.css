@@ -29,6 +29,9 @@
     font-style: normal;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -776,6 +779,7 @@ h5 {
     display: flex;
     gap: 10px;
     background: #fff;
+    color: black;
 }
 
 .budget-options>* {
@@ -918,6 +922,8 @@ h5 {
     margin-bottom: 1.5rem;
     color: #555;
 }
+
+.gradient-bg:has(textarea)
 
 textarea {
     font-size: 20px;
@@ -1201,7 +1207,7 @@ footer {
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 78px;
     }
 
     .mid-header {
@@ -1291,11 +1297,7 @@ footer {
     }
 
     h2 {
-        font-size: 34px;
-    }
-
-    .about-container h2 {
-        font-size: 40px;
+        font-size: 48px!important;
     }
 
     .formula-container {
@@ -1580,7 +1582,7 @@ footer {
     }
 
     .mobile-menu .glowing-btn {
-        margin-bottom: 60px;
+        margin-bottom: 120px;
         height: 64px;
         width: 90%;
     }
@@ -1631,5 +1633,15 @@ footer {
     background-color: #FFA96A!important;
     width: 82px!important;
     border-radius: 12px!important;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    h1{
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 34px!important;
     }
 }

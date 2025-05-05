@@ -89,7 +89,7 @@
                 scale.
             </p>
 
-            <a class="glowing-btn" href="">Get Results Like Clockwork</a>
+            <a class="glowing-btn" href="#contact">Get Results Like Clockwork</a>
 
             <div class="scroll-down">
                 <img class="mobnot" src="img/scroll-arrow.png" alt="arrow">
@@ -112,7 +112,7 @@
 
             <p class="special-p">
                 Inspired by the legendary,<br><span>Claude Hopkins,</span><br>we built <span>Scientific
-                    Advertising</span> for one reason:<br>to brin structure,<br>logic,<br>and precision<br>to a world
+                    Advertising</span> for one reason:<br>to bring structure,<br>logic,<br>and precision<br>to a world
                 full of guesswork.
             </p>
 
@@ -514,13 +514,13 @@
 
                 <!-- 2️⃣ Honorific + Full Name on one row -->
                 <div class="form-row">
-                    <div class="gradient-bg">
+                    <!-- <div class="gradient-bg">
                         <select id="honorific" name="honorific" class="form-control">
                             <option value="" selected>Honorific</option>
                             <option value="mr">Non Honorific</option>
                         </select>
-                    </div>
-                    <div class="gradient-bg">
+                    </div> -->
+                    <div style="width: 100%;" class="gradient-bg">
                         <input id="full-name" name="fullName" type="text" placeholder="Full Name*"
                             class="form-control" />
                     </div>
@@ -578,7 +578,6 @@
             const nameField = document.getElementById('full-name');
             const emailField = document.getElementById('email');
             const message = document.getElementById('message');
-            const honorific = document.getElementById('honorific');
             const budgetVal = document.getElementById('budget');
             const budgetBtns = form.querySelectorAll('.budget-option');
             const submitBtn = form.querySelector('.submit-btn');
@@ -605,7 +604,6 @@
             [nameField, emailField, message].forEach(el =>
                 el.addEventListener('input', resetErrorState)
             );
-            honorific.addEventListener('change', resetErrorState);
 
             // 3) submit handler
             form.addEventListener('submit', e => {
@@ -666,6 +664,11 @@
             document.querySelector("body").style.overflow = "auto"
         })
 
+        document.querySelectorAll(".mobile-menu a").forEach(a=>{
+            a.addEventListener("click", ()=>{
+                document.querySelector(".x").click()
+            })
+        })
 
     </script>
 
